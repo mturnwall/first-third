@@ -13,3 +13,18 @@
         @warn "No breakpoint named '#{$name}' was found.";
     }
 }
+
+/// Set dimensions for SVG objects
+/// @param $width [55px] - width of the SVG
+/// @param $height [55px] - height of the SVG
+/// @param $fill [currentcolor]  - color of the svg
+/// @content
+/// @author Michael Turnwall
+@mixin svgShape($width: 55px, $height: $width, $fill: currentColor) {
+    display: inline-block;
+    fill: $fill;
+    vertical-align: middle;
+    width: $width;
+    height: $height;
+    @content;
+}

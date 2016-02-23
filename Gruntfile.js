@@ -429,14 +429,14 @@ module.exports = function (grunt) {
                 files: [
                     '<%= config.app %>/sass/**/*.scss',
                 ],
-                tasks: ['sass_globbing', 'sass:dev', 'postcss:dev']
+                tasks: ['sass_globbing', 'sass:dev', 'postcss:dev', 'replace:sourceMap']
             },
             scripts: {
                 files: [
                     '<%= config.app %>/scripts/{,*/}*.js',
                     '!<%= config.app %>/scripts/compiled/*'
                 ],
-                tasks: ['eslint', 'babel', 'uglify:dev']
+                tasks: ['eslint', 'babel', 'uglify:dev', 'replace:sourceMap']
             },
             assemble: {
                 files: [

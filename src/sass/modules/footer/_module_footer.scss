@@ -1,0 +1,48 @@
+.siteFooter {
+    background-color: $color-cerulean;
+    overflow: hidden;
+    padding: 20px 0;
+    color: $color-white;
+
+    &__inner {
+        @include container();
+    }
+    &__companyInfo {
+        @include span(4);
+        @include fontSize(18);
+        font-weight: 700;
+        margin-top: 11px;
+    }
+    &__finePrint {
+        @include span(4);
+        @include fontSize(12);
+        font-weight: 700;
+        margin-top: 17px;
+    }
+}
+.socialIcons {
+    @include span(4 last);
+    text-align: right;
+
+    &__link {
+        background-color: $color-white;
+        display: inline-block;
+        border-radius: 50%;
+        margin-right: 20px;
+        padding-top: 10px;
+        width: 42px;
+        height: 42px;
+        color: $color-cerulean;
+        text-align: center;
+        transition: box-shadow 500ms $easeOutCirc;
+
+        &:hover {
+            box-shadow: 0 0 4px 2px rgba(0,0,0,.5);
+            // background-color: $color-cerulean;
+            // color: $color-white;
+        }
+    }
+    svg {
+        @include svgShape(24px);
+    }
+}
