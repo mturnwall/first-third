@@ -1,0 +1,29 @@
+{
+    "source": {
+        "include": ["app/scripts/"],
+        "exclude": [ "app/scripts/libs" ],
+        "includePattern": ".+\\.js(doc)?$"
+    },
+    "opts": {
+            "private": true,
+            // "template": "node_modules/ink-docstrap/template",
+            "readme": "README.md",
+            "package": "package.json"
+        },
+    "templates": {
+            "cleverLinks": false,
+            "monospaceLinks": false,
+            "default": {
+                "outputSourceFiles": true
+            },
+            "systemName"      : "Hum Marketing",
+            "footer"          : "",
+            "copyright"       : "Hum Marketing Copyright © 2015 All Rights Reserved.",
+            "navType"         : "vertical",
+            // "theme"           : "cerulean",
+            "linenums"        : true,
+            "collapseSymbols" : false,
+            "inverseNav"      : true,
+            "syntaxTheme": "dark"
+        }
+}

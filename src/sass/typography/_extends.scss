@@ -1,0 +1,12 @@
+%alphaHdr {
+    @include fontSize(60);
+    font-weight: 300;
+    padding-bottom: 15px;
+    line-height: 1;
+}
+%bravoHdr {
+    @include fontSize(30);
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 8px;
+}
