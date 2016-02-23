@@ -21,7 +21,7 @@
             animation-name: tabPulse;
             animation-iteration-count: infinite;
             animation-duration: 2000ms;
-            animation-timing-function: cubic-bezier(.09,.88,.7,.95);
+            animation-timing-function: cubic-bezier(0.09, 0.88, 0.7, 0.95);
         }
         &:last-of-type {
             border-right: 0;
@@ -58,8 +58,8 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 25px 25px 0 25px;
-    border-color: $color-cerulean transparent transparent transparent;
+    border-width: 25px 25px 0;
+    border-color: $color-cerulean transparent transparent;
 }
 .tab {
     overflow: hidden;
