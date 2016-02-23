@@ -1,0 +1,55 @@
+.siteHeader {
+    @include container();
+    background-color: $color-white;
+    position: relative;
+
+    &__toggle {
+        display: none;
+        float: right;
+        margin: 26px 20px;
+    }
+
+    @include set-breakpoint(tablet) {
+
+    }
+    @include set-breakpoint(mobile) {
+
+    }
+}
+.siteNav {
+    @include span(6 last);
+    text-align: right;
+
+    &__item {
+        display: inline-block;
+        text-transform: uppercase;
+    }
+    &__link {
+        @include fontSize(12);
+        display: inline-block;
+        padding: 25px;
+        color: $color-tundora;
+        font-weight: 700;
+
+        &:hover {
+            background-color: $color-cerulean;
+            color: $color-white;
+            text-decoration: none;
+        }
+    }
+}
+.siteLogo {
+    float: left;
+    width: 136px;
+    height: 63px;
+
+    &__link {
+        background: url('/imgs/site_logo.png');
+        display: inline-block;
+        width: 136px;
+        height: 63px;
+        text-indent: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}

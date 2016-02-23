@@ -1,0 +1,20 @@
+.hero {
+    background: url('http://placehold.it/1000x495') no-repeat 0 0;
+    background-size: cover;
+    min-height: 495px;
+
+    &__copy {
+        @include container();
+        color: $color-white;
+        padding-top: 8%;
+    }
+    &__title {
+        @include span(4);
+        @include fontSize(22);
+        margin-bottom: 5px;
+    }
+    &__blurb {
+        @include break;
+        @include span(4);
+    }
+}
