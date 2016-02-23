@@ -5,17 +5,17 @@
 //**********************************************
 
 //******** Configs and Helpers ********//
-@import "config",
-        "easing",
-        "../../node_modules/css-wipe/index"; // css reset
+@import 'config',
+        'easing',
+        '../../node_modules/css-wipe/index'; // css reset
 
 //******** Elements (Atoms) ********//
-@import "typography",
-        "buttons",
-        "forms",
-        "uiMap";
+@import 'typography',
+        'buttons',
+        'forms',
+        'uiMap';
 
 //******** Blocks ********//
-@import "global",
-		"modulesMap",
-		"layoutsMap";
+@import 'global',
+		'modulesMap',
+		'layoutsMap';

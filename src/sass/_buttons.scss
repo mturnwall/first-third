@@ -1,2 +1,5 @@
-@import "buttons/mixins";
+@import 'buttons/mixins';
 
+.tabBtn {
+    @include reset-button;
+}

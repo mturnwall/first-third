@@ -1,6 +1,6 @@
 // Fallback unit type for relative fonts
 /// @group fonts
-$font-fallback-type: "%";
+$font-fallback-type: '%';
 
 $headers: (
     h1: alpha,
@@ -24,12 +24,12 @@ $headers: (
 ///  // font-size: 129%
 ///  // font-size: 1.28571rem
 @mixin fontSize($actual, $relative: $font-size-base) {
-    @if $font-fallback-type == "%" {
+    @if $font-fallback-type == '%' {
         font-size: getRelativeFontSize($actual, $relative, $font-fallback-type);
     } @else {
         font-size: $actual;
     }
-    font-size: getRelativeFontSize($actual, $relative, "rem");
+    font-size: getRelativeFontSize($actual, $relative, 'rem');
 }
 
 /// Write out all the CSS required to handle icon fonts. The base styles
@@ -40,7 +40,7 @@ $headers: (
 ///
 /// @group fonts
 @mixin iconFont($class) {
-    [class^="icon-"], [class*=" icon-"], .#{$class} {
+    [class^='icon-'], [class*=' icon-'], .#{$class} {
         @extend %iconGlyphs;
         font-family: $class;
     }
@@ -68,7 +68,7 @@ $ff-dir: '/fonts' !default;
 /// @example scss
 ///     // Here is how the map should be setup.
 ///     $ff-map: (
-///       "Proxima-Nova": (
+///       `Proxima-Nova": (
 ///         "Proxima-Nova-Light": (
 ///           weight: "500",
 ///           src: (
@@ -135,13 +135,13 @@ $ff-map: () !default;
 /// @requires ff-get-src
 /// @group fonts
 @mixin ff-batch($fonts) {
-  @each $font-group, $fonts in $fonts {
-    @each $font-name, $font-properties in $fonts {
-        $src: ff-get-src($font-properties);
-        $font: map-merge($font-properties, ('src': $src));
-        @include ff-single($font-group, $font...);
+    @each $font-group, $fonts in $fonts {
+        @each $font-name, $font-properties in $fonts {
+            $src: ff-get-src($font-properties);
+            $font: map-merge($font-properties, ('src': $src));
+            @include ff-single($font-group, $font...);
+        }
     }
-  }
 }
 
 @mixin section-header($color: $color-black) {

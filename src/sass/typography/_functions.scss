@@ -9,9 +9,9 @@
 /// @group fonts
 /// @author Michael Turnwall
 @function getRelativeFontSize($actual, $relative, $unitType) {
-    @if $unitType == "rem" {
-        @return #{($actual/$font-size-base)}rem;
+    @if $unitType == 'rem' {
+        @return #{($actual / $font-size-base)}rem;
     } @else {
-        @return ceil(percentage($actual/$relative));
+        @return ceil(percentage($actual / $relative));
     }
 }

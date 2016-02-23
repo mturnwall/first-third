@@ -1,4 +1,4 @@
-@import "../easing";
+@import '../easing';
 
 /// build a button based on a theme from
 /// $button-themes map
@@ -14,7 +14,7 @@
     color: map-get($values, color);
     display: inline-block;
     text-decoration: none;
-    padding: 12px 30px 12px;
+    padding: 12px 30px;
     text-transform: lowercase;
     transition: all 500ms $easeOutCubic;
 
@@ -34,7 +34,7 @@
     cursor: pointer;
     outline: none;
 
-    &:focus {
+    // &:focus {
 
-    }
+    // }
 }
