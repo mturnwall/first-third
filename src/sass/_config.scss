@@ -1,0 +1,58 @@
+@import '../../node_modules/susy/sass/susy';
+
+/// Susy config
+$susy: (
+    container: 1200px,
+    columns: 12,
+    column-width: 80px,
+    gutters: 1 / 5,
+    math: fluid,
+    global-box-sizing: border-box
+);
+
+/// media queries
+$media-queries: (
+    mobile: (max-width: 767px),
+    tablet: 768px 1024px,
+    desktop: 1200px
+);
+
+//***** Colors *****/
+$color-black: #000;
+$color-white: #fff;
+$color-cerulean: #00a5db;
+$color-cod-gray: #1b1b1b;
+$color-tundora: #444;
+$color-timberwolf: #d3d1cd;
+
+$social-icons-shadow: rgba(0, 0, 0, 0.5);
+
+/// Button themes
+// $button-themes: (
+//     primary: (
+//         bgColor: ,
+//         color:
+//     ),
+//     link: (
+//         bgColor: ,
+//         color:
+//     )
+// );
+
+//***** Typography *****/
+/// Base font size for the page. Assign to the <html> element
+/// @group Fonts
+$font-size-base: 16;
+
+/// Default page font stack
+/// @group Fonts
+$font-family-sans: Helvetica, Arial, sans-serif;
+
+/// Alternative font stack
+/// @group Fonts
+// $font-family-sans-alt: "AvenirLTStd-Book", "Helvetica Neue Regular", Helvetica, Arial, sans-serif;
+
+/// Headers font stack
+/// @group Fonts
+$font-family-heading: $font-family-sans;
+

@@ -1,0 +1,89 @@
+.tabsWrapper {
+    position: relative;
+}
+.tabs {
+    overflow: hidden;
+    position: relative;
+
+    .tabBtn {
+        @include fontSize(14);
+        @include span(3 inside no-gutters);
+        background-color: $color-black;
+        color: $color-white;
+        text-transform: uppercase;
+        cursor: pointer;
+        height: 80px;
+        border-right: 1px solid $color-tundora;
+        font-weight: bold;
+
+        &:hover {
+            border-left: 1px solid $color-tundora;
+            animation-name: tabPulse;
+            animation-iteration-count: infinite;
+            animation-duration: 2000ms;
+            animation-timing-function: cubic-bezier(0.09, 0.88, 0.7, 0.95);
+        }
+        &:last-of-type {
+            border-right: 0;
+        }
+        &--active {
+            background-color: $color-cerulean;
+            cursor: default;
+
+            &:hover {
+                background-color: $color-cerulean;
+                animation: none;
+            }
+        }
+    }
+}
+@keyframes tabPulse {
+    0% {
+        transform: scale(1);
+        background-color: $color-black;
+    }
+    50% {
+        transform: scale(1.2);
+        background-color: $color-cod-gray;
+    }
+    100% {
+        transform: scale(1);
+        background-color: $color-black;
+    }
+}
+.tabPointer {
+    position: absolute;
+    top: 80px;
+    left: 11%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 25px 0;
+    border-color: $color-cerulean transparent transparent;
+}
+.tab {
+    overflow: hidden;
+
+    &__beauty {
+        @include span(6 inside no-gutters);
+        display: block;
+    }
+    &__copy {
+        @include span(6 inside no-gutters);
+        padding: 70px 30px 45px 60px;
+    }
+    &__title {
+        @include fontSize(22);
+        width: span(4 of 6);
+        margin-bottom: 6px;
+    }
+    &__blurb {
+        width: span(4 of 6);
+        margin-bottom: 20px;
+    }
+    &__image {
+        @include span(2 of 6);
+        border: 1px solid $color-timberwolf;
+        border-radius: 3px;
+    }
+}

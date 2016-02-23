@@ -1,0 +1,56 @@
+@import 'typography/functions';
+@import 'typography/mixins';
+@import 'typography/extends';
+
+// $ff-map: (
+//     "SharpSansNo1": (
+//         "SharpSansNo1-Light": (
+//             src: (
+//                 woff: "sharpsansno1-light.woff",
+//                 ttf: "sharpsansno1-light.ttf"
+//             ),
+//             weight: 300
+//         ),
+//         "SharpSansNo1-LightItalic": (
+//             src: (
+//                 woff: "sharpsansno1-lightitalic.woff",
+//                 ttf: "sharpsansno1-lightitalic.ttf"
+//             ),
+//             weight: 300,
+//             style: italic
+//         ),
+//         "SharpSansNo1-Book": (
+//             src: (
+//                 woff: "sharpsansno1-book.woff",
+//                 ttf: "sharpsansno1-book.ttf"
+//             )
+//         ),
+//         "SharpSansNo1-Medium": (
+//             src: (
+//                 woff: "sharpsansno1-medium.woff",
+//                 ttf: "sharpsansno1-medium.ttf"
+//             ),
+//             weight: 500
+//         ),
+//         "SharpSansNo1-MediumItalic": (
+//             src: (
+//                 woff: "sharpsansno1-mediumitalic.woff",
+//                 ttf: "sharpsansno1-mediumitalic.ttf"
+//             ),
+//             weight: 500,
+//             style: italic
+//         ),
+//         "SharpSansNo1-SemiBold": (
+//             src: (
+//                 woff: "sharpsansno1-semibold.woff",
+//                 ttf: "sharpsansno1-semibold.ttf"
+//             ),
+//             weight: bold
+//         )
+//     )
+// );
+
+// @include ff-batch($ff-map);
+
+
+
