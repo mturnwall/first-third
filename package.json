@@ -47,6 +47,7 @@
   "dependencies": {
     "css-wipe": "^4.1.2",
     "jquery": "^2.1.4",
-    "rsvp": "^3.1.0"
+    "rsvp": "^3.1.0",
+    "slick-carousel": "^1.5.8"
   }
 }

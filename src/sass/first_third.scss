@@ -7,7 +7,9 @@
 //******** Configs and Helpers ********//
 @import 'config',
         'easing',
-        '../../node_modules/css-wipe/index'; // css reset
+        '../../node_modules/css-wipe/index', // css reset
+        "../../node_modules/slick-carousel/slick/slick.scss", // slick main
+        "../../node_modules/slick-carousel/slick/slick-theme.scss"; // slick theme
 
 //******** Elements (Atoms) ********//
 @import 'typography',
