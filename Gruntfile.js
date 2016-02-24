@@ -146,7 +146,7 @@ module.exports = function (grunt) {
             dev: {
                 options: {
                     // serve files from both the app and tmp folders
-                    base: ['<%= config.dev %>', '<%= config.app %>'],
+                    base: ['<%= config.dev %>', '<%= config.tmp %>', '<%= config.app %>'],
                     open: {
                         target: 'http://localhost:<%= connect.options.port %>'
                     }
@@ -379,7 +379,8 @@ module.exports = function (grunt) {
          */
         uglify: {
             options: {
-                screwIE8: true
+                screwIE8: true,
+                quoteStyle: 3
             },
             dev: {
                 options: {

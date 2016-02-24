@@ -55,11 +55,13 @@
     position: absolute;
     top: 80px;
     left: 11%;
+    z-index: 2;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 25px 25px 0;
     border-color: $color-cerulean transparent transparent;
+    transition: left 1s $easeOutCirc;
 }
 .tab {
     overflow: hidden;
