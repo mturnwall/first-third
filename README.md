@@ -21,8 +21,8 @@ I used assemble for the HTML. The idea behind that is if the code was for produc
 
 The gruntfile is one I wrote for another project. It builds the dev files as minified files to mimic the size the production would see. Source maps are used to allow debugging. There is a Babel task so javascript can be written ES6.
 
-Right now the tabs don't switch content. I tried out an animation on the tab button itself to give it a feeling of it pulsing. I'm still going to add the functionality of the tabs switching today. I just wanted to get this over to you so you can take a look.
+Tabs switch as expected. I used a carousel to switch the tabs. I use an array to reverse the order of the tabs so that the arrow and tab slide in the same direction. So clicking on Tab 4 is really showing the first item in the carousel.
 
-I include a eslint and scss-lint config files to make sure standards are met.
+I included a eslint and scss-lint config files to make sure standards are met.
 
 I'd be great to get on a call so I can go over my methodologies to the site structure and code formats. 
